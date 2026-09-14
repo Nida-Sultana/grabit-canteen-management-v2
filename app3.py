@@ -141,4 +141,5 @@ else:
                     requests.pop(idx)
                     save_json(REQUESTS_FILE, requests)
                     st.success(f"Added {req} to catalog.")
-                    st.experimental_rerun()
+st.rerun()
+
