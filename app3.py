@@ -103,11 +103,11 @@ else:
                 if st.button(f"Mark Ready #{order['id']}"):
                     order["status"] = "📦 Ready"
                     save_json(ORDERS_FILE, orders)
-                    st.experimental_rerun()
+                    st.rerun()
                 if st.button(f"Mark Collected #{order['id']}"):
                     order["status"] = "✅ Collected"
                     save_json(ORDERS_FILE, orders)
-                    st.experimental_rerun()
+                    st.rerun()
                 st.markdown("---")
 
     # --- Inventory ---
